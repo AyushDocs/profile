@@ -6,7 +6,7 @@ import Project from './Project';
 
 const App = () => {
 	return (
-		<div>
+		<div className='bg-slate-100 h-screen'>
 			<Routes>
 				<Route path='/' element={<></>} />
 				<Route path='/projects' element={<Project/>} />
