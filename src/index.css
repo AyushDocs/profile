@@ -1,0 +1,22 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+.home {
+	/* background: url('https://cdn.britannica.com/30/199930-131-B3D1D347/computer.jpg'); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-fit: contain;
+}
+::selection{
+  background-color: black;
+  color: #1a1c1e;
+}
