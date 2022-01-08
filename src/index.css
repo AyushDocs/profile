@@ -16,7 +16,3 @@ html {
 	background-size: cover;
 	object-fit: contain;
 }
-::selection{
-  background-color: black;
-  color: #1a1c1e;
-}
