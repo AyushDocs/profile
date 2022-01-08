@@ -1,8 +1,5 @@
 /** @format */
-import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import React, {useEffect, useState} from 'react';
-import usePage from '../hooks/usePage';
 import PageHandler from './PageHandler';
 const dummyData = [
 	{name: 'Spotify Clone', stack: 'built using javascript and my brain'},
@@ -13,11 +10,9 @@ const dummyData = [
 	},
 	{name: 'Spotify Clone', stack: 'built using javascript and my brain'},
 	{name: 'Spotify Clone', stack: 'built using javascript and my brain'},
-	{name: 'Spotify Clone', stack: 'built using javascript and my brain'},
 ];
 const Project = () => {
 	const [Data, setData] = useState(dummyData);
-	const page = usePage();
 	useEffect(() => {
 		setData(dummyData);
 	}, []);
@@ -31,7 +26,7 @@ const Project = () => {
 					<ProjectItem liveSiteUrl={'/'} key={index} name={name} stack={stack} />
 				))}
 			</div>
-			<PageHandler last={true}/>
+			<PageHandler last={true} />
 		</>
 	);
 };
